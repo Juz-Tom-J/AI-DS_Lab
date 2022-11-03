@@ -10,6 +10,6 @@ logr.fit(X,y)
 tumor = input("Enter the tumor size: ")
 predicted = logr.predict(np.array([tumor]).reshape(-1,1))
 if predicted == 1:
-    print('Cancerous') 
+    print('Malignant') 
 else:
-    print('Non-Cancerous')
+    print('Benign')
