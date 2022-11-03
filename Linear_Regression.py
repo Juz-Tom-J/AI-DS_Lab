@@ -20,5 +20,5 @@ plt.xlabel("Sepal Length in cm")
 plt.ylabel("Sepal Width in cm")
 plt.show()
 
-predict = float(input("Enter Value of sepal length to predict the sepal width\t"))
+predict = float(input("Enter value of sepal length to predict the sepal width\t"))
 print("Value predicted: ",y_eq(predict))
