@@ -23,10 +23,14 @@ plt.xlabel("Predicted")
 plt.ylabel("Actual")
 plt.show()
 
-TN =  cm[0,0]
-TP =  cm[1,1]
-FP =  cm[0,1]
-FN =  cm[1,0]
+TP =  cm[0,0]
+print("True Positive: ",TP)
+TN =  cm[1,1]
+print("True Negative: ",TN)
+FN =  cm[0,1]
+print("False Negative: ",FN)
+FP =  cm[1,0]
+print("False Positive: ",FP)
 
 accuracy = float((TP+TN)/(TP+FN+TN+FP))
 print("Accuracy = ",accuracy)
